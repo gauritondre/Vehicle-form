@@ -3,25 +3,24 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import './App.css'
 import Form from './Components/Form';
 import Navbar from './Components/Navbar';
+import UpdateForm from "./Components/UpdateForm";
+import Brands from "./Components/Brands.jsx";
 
 function App() {
 
   return (
     <>
-   
-     {/* <Form/> */}
-     <Navbar/>
 
-     {/* <Router>
+    <Router>
       <Navbar />
-      <div className="pt-20 px-4">
-        <Routes>
-          
-          <Route path="/form" element={ } />
-          <Route path="/brands" element={} />
-        </Routes>
-      </div>
-    </Router> */}
+      <Routes>
+        <Route path="/" element={<Form />} />
+        <Route path="/brands" element={<Brands />} />
+      </Routes>
+    </Router>
+  
+
+    
     </>
   )
 }
